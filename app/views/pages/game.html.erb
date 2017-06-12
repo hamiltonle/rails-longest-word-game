@@ -1,0 +1,19 @@
+<h1>Welcome to the longest word-game !</h1>
+<p>Here is your grid:</p>
+
+<!-- generate and display grid -->
+<h4><%= @gamegrid.join(" ") %></h4>
+<% @start_time = Time.now %>
+<%  %>
+
+<!-- form to input game attempt -->
+<form action="/score">
+  <input type="text" name="attempt" placeholder="What's your best shot?">
+  <input type="text" name="start_time" value="<%= @start_time %>">
+<!--   <input type="text" name="end_time" value="<%= Time.now %>">
+ -->
+  <input type="text" name="gamegrid2" value="<%= @gamegrid %>">
+  <input type="submit" name="<% Time.now %>" class="btn-primary btn">
+</form>
+
+

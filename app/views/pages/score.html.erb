@@ -1,0 +1,25 @@
+<h1>Pages#score</h1>
+<p>Find me in app/views/pages/score.html.erb</p>
+
+
+
+<%= @gamescore %>
+<%= @gamescore[:time] %>
+<h3>gamegrid</h3>
+<%= @gamegrid %>
+<h3>gamegrid2</h3>
+<%= @gamegrid2 %>
+<%= @start_time %>
+<%= @end_time %>
+
+
+
+
+<h2>Your word: <%= @attempt %></h2>
+<h2>Time Taken to answer: <%= @gamescore[:time] %></h2>
+<h2>Translation: <%= @gamescore[:translation] %></h2>
+<h2>Your score: <%= @gamescore[:score] %></h2>
+<h2>Message: <%= @gamescore[:message] %></h2>
+
+
+<br>
